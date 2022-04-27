@@ -1,0 +1,85 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Main Content over background -->
+<div id="intro-header" style="" class="bg-image">
+    <!--  Main Container  -->
+    <div class="container-fluid d-flex flex-column align-items-center justify-content-center text-center h-100"
+         style="background-color:black;">
+        <div class="container  text-white" style="background-color: grey;">
+            <h1 class="mb-3">This is Quickstart</h1>
+            <h3 class="mb-4">The best free workout routine generator. It's here to help you avoid analysis paralysis and
+                do what matters most, lift.</h3>
+            <a class="btn btn-outline-light btn-lg m-2" href="{{ url_for('quiz') }}" role="button"
+               rel="nofollow" target="_blank">Quickstart Quiz</a>
+            <a class="btn btn-outline-light btn-lg m-2" href="{{ url_for('programs') }}" target="_blank"
+               role="button">View Programs</a>
+        </div>
+        <h1>Lifting Resources</h1>
+        <!--   Card Container    -->
+        <div class=" container d-flex align-items center justify-content-center text-center"
+             style="background-color: yellow;">
+            <!--    Card Row Container Start        -->
+            <div class="row" style="background-color: red;">
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the
+                                card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the
+                                card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the
+                                card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the
+                                card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+
+        </div>
+        <!--      Card Row Container End Add New Card Above          -->
+    </div>
+
+</div>
+</div>
+
+</div>
+</div>
+{% endblock%}

@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+        <h1>Programs</h1>
+        <!--   Card Container    -->
+        <div class=" container d-flex align-items center justify-content-center text-center"
+             style="background-color: yellow;">
+            <!--    Card Row Container Start        -->
+            <div class="row" style="background-color: red;">
+            {% for workout in pl: %}
+
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ workout["title"] }}</h5>
+                            <p class="card-text">{{ workout["summary"] }}</p>
+                            <a href="{{ url_for('get_workout', name=workout['title']) }}" class="btn btn-primary">View Workout</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+<!--                <div class="col">-->
+<!--                    <div class="card" style="width: 18rem;">-->
+<!--                        <img src="..." class="card-img-top" alt="...">-->
+<!--                        <div class="card-body">-->
+<!--                            <h5 class="card-title">Card title</h5>-->
+<!--                            <p class="card-text">Some quick example text to build on the card title and make up the bulk-->
+<!--                                of-->
+<!--                                the-->
+<!--                                card's content.</p>-->
+<!--                            <a href="#" class="btn btn-primary">Go somewhere</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col">-->
+<!--                    <div class="card" style="width: 18rem;">-->
+<!--                        <img src="..." class="card-img-top" alt="...">-->
+<!--                        <div class="card-body">-->
+<!--                            <h5 class="card-title">Card title</h5>-->
+<!--                            <p class="card-text">Some quick example text to build on the card title and make up the bulk-->
+<!--                                of-->
+<!--                                the-->
+<!--                                card's content.</p>-->
+<!--                            <a href="#" class="btn btn-primary">Go somewhere</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="col">-->
+<!--                    <div class="card" style="width: 18rem;">-->
+<!--                        <img src="..." class="card-img-top" alt="...">-->
+<!--                        <div class="card-body">-->
+<!--                            <h5 class="card-title">Card title</h5>-->
+<!--                            <p class="card-text">Some quick example text to build on the card title and make up the bulk-->
+<!--                                of-->
+<!--                                the-->
+<!--                                card's content.</p>-->
+<!--                            <a href="#" class="btn btn-primary">Go somewhere</a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                &lt;!&ndash;      Card Row Container End Add New Card Above          &ndash;&gt;-->
+<!--                </div>-->
+
+            </div>
+        </div>
+
+
+{% endblock %}
