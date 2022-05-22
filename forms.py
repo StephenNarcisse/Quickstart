@@ -22,8 +22,9 @@ class DaysChoice(FlaskForm):
 
 
 class WeightForm(FlaskForm):
-    bench = press = squat = deadlift = 0
-    bench_field = fields.IntegerField("Bench Press")
-    press_field = fields.IntegerField("Overhead Press")
-    squat_field = fields.IntegerField("Squat")
-    deadlift_field = fields.IntegerField("Deadlift")
+    # bench = press = squat = deadlift = 100
+    bench_field = fields.IntegerField("Bench Press", default=255)
+    press_field = fields.IntegerField("Overhead Press", default=165)
+    squat_field = fields.IntegerField("Squat", default=365)
+    deadlift_field = fields.IntegerField("Deadlift", default=405)
+

@@ -11,34 +11,43 @@ def home():
     return render_template("index.html")
 
 
-
 @app.route('/quiz', methods=['GET', 'POST'])
 def quiz():
     weight_form = forms.WeightForm()
     equip_form = forms.EquipmentChoice()
     days_form = forms.DaysChoice()
-    print(weight_form.bench_field, weight_form.press_field)
     lifts = forms.LiftingStatus()
+    print(weight_form.bench_field.data, weight_form.press_field.data)
+    print(weight_form.bench_field)
+
     return render_template("quiz.html",
                            weight_form=weight_form,
                            equip_form=equip_form,
                            days_form=days_form,
-                           bench=weight_form.bench,
-                           press=weight_form.press,
-                           squat=weight_form.squat,
-                           deadlift=weight_form.deadlift,
                            lifts=lifts
                            )
 
+
 @app.route('/programs')
 def programs():
+    return render_template("programs.html", pl=powerlifting, bb=bodybuilding)
 
-    return render_template("programs.html", pl=powerlifting)
 
-
-@app.route("/programs/<string:name>")
+@app.route("/programs/<string:name>", methods=['GET', 'POST'])
 def get_workout(name):
-    return render_template("workout.html")
+    weight_form = forms.WeightForm()
+    print(weight_form.squat_field.data)
+    bench = weight_form.bench_field.data
+    press = weight_form.press_field.data
+    squat = weight_form.squat_field.data
+    deadlift = weight_form.deadlift_field.data
+
+    return render_template(f"{name}.html",
+                           weight_form=weight_form,
+                           pl=powerlifting,
+                           bb=bodybuilding,
+                           tl=TEMPLATE,
+                           )
 
 
 if __name__ == "__main__":
