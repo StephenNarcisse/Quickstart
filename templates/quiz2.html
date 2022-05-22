@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Main Content over background -->
+<div id="quiz-header" style="" class="bg-image">
+    <!--  Main Container  -->
+
+    <div class="row container-fluid d-flex"
+
+         style="background-color: black;">
+        <!-- Left Side content       -->
+        <div class="text-white col-md-4 " style="background-color: blue;">
+
+            <!--   Forms for Weight Input         -->
+            <h3>Current Lifts?</h3>
+            {{ weight_form.bench_field.label }}
+            {{ weight_form.bench_field }}
+            <br/>
+            {{ weight_form.press_field.label }}
+            {{ weight_form.press_field }}
+            <br/>
+            {{ weight_form.squat_field.label }}
+            {{ weight_form.squat_field }}
+            <br/>
+            {{ weight_form.deadlift_field.label }}
+            {{ weight_form.deadlift_field }}
+            <br/>
+            {{ lifts.radio.label }}
+            {% for subfield in lifts.radio %}
+            <tr>
+                <td>{{ subfield }}</td>
+                <td>{{ subfield.label }}</td>
+            </tr>
+            {% endfor %}
+            </br>
+            {{ equip_form.equipment.label }}
+            {{ equip_form.equipment }}
+            </br>
+            {{ days_form.radio.label }}
+            {% for subfield in days_form.radio %}
+            <tr>
+                <td>{{ subfield }}</td>
+                <td>{{ subfield.label }}</td>
+            </tr>
+            {% endfor %}
+            </br>
+
+            </br>
+            <input type="submit">
+            </form>
+        </div>
+        <!-- Right Side Content       -->
+        <div class="col-md-8 text-white " style="background-color: red;">
+            <h1>Pouplar workouts</h1>
+<!--            <div class="card text-black border-dark" style="width: 18rem;">-->
+<!--                <div class="" style="background-color: green;">Test</div>-->
+<!--                <img class="card-img-top" src="../../static/conquer.jpg" alt="...">-->
+
+<!--                <div class="card-body">-->
+<!--                    <h4 class="card-title">Arnold Split</h4>-->
+<!--                    <h5 class="">6x Per week</h5>-->
+<!--                    <p class="card-text">A 6 day high volume bodybuilding split made by Arnold himself</p>-->
+<!--                </div>-->
+<!--                <div class="card-body">-->
+<!--                    <h4 class="card-title">Arnold Split</h4>-->
+<!--                    <h5 class="">6x Per week</h5>-->
+<!--                    <p class="card-text">A 6 day high volume bodybuilding split made by Arnold himself</p>-->
+<!--                </div>-->
+<!--            </div>-->
+            <div class="card mb-3" style="">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../../static/home.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3" style="">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="../../static/home.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+{% endblock%}

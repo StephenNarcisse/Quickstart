@@ -1,0 +1,1452 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!--  Main Container  -->
+<div class="w-75 container-fluid d-flex flex-column align-items-center justify-content-center text-center"
+     style="background-color: ;">
+    <div class="container  text-black" style="background-color: ;">
+        <h1 class="mb-3">{{ bb[0]["title"] }}</h1>
+        <h5 class="mb-4">{{ bb[0]["summary"] }}</h5>
+    </div>
+    <!--  Subtitles  -->
+    <div class="d-flex flex-row">
+        <div class="p-2"><h2>{{ bb[0]["type"] }}</h2></div>
+        <div class="p-2"><h2>{{ bb[0]["frequency"] }}</h2></div>
+        <div class="p-2"><h2>{{ bb[0]["intensity"] }}</h2></div>
+        <div class="p-2"><h2>{{ bb[0]["time"] }}</h2></div>
+    </div>
+
+
+    <!--  Tables Nav Header  -->
+    <nav>
+        <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="week-1-tab" data-bs-toggle="tab" data-bs-target="#nav-week-1"
+                    type="button" role="tab" aria-controls="nav-home" aria-selected="true">Week 1
+            </button>
+            <button class="nav-link" id="week-2-tab" data-bs-toggle="tab" data-bs-target="#nav-week-2"
+                    type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Week 2
+            </button>
+            <button class="nav-link" id="week-3-tab" data-bs-toggle="tab" data-bs-target="#nav-week-3"
+                    type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Week 3
+            </button>
+            <button class="nav-link" id="week-4-tab" data-bs-toggle="tab" data-bs-target="#nav-week-4"
+                    type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Week 4
+            </button>
+            <button class="nav-link" id="week-5-tab" data-bs-toggle="tab" data-bs-target="#nav-week-5"
+                    type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Week 5
+            </button>
+            <button class="nav-link" id="week-6-tab" data-bs-toggle="tab" data-bs-target="#nav-week-6"
+                    type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Week 6
+            </button>
+            <button class="nav-link" id="week-7-tab" data-bs-toggle="tab" data-bs-target="#nav-week-7"
+                    type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Week 7
+            </button>
+        </div>
+    </nav>
+    <!--  Nav Content/Tables  -->
+    <div class="tab-content" id="nav-tabContent">
+
+        <!--Week 1-->
+        <div class="tab-pane fade show active " id="nav-week-1" role="tabpanel" aria-labelledby="week-1-tab">
+            <div class="vstack" style="background-color: ;">
+                <!--Chest&Back-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th class="col-6" scope="col">Movement</th>
+                            <th scope="col">Weight</th>
+                            <th scope="col">Sets</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Decline Dumbbell Press (A1)</th>
+                            <td>60% 1RM</td>
+                            <td>10x10</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Chin Ups (A2)</th>
+                            <td>60% 1RM</td>
+                            <td>10x10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Incline Dumbbell Flyes (B1)</th>
+                            <td>60% 1RM</td>
+                            <td>3x10-12</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">One Arm Dumbbell Rows (B2)</th>
+                            <td>60% 1RM</td>
+                            <td>3x10-12</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--Legs & Abs-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th class="col-6" scope="col">Movement</th>
+                            <th scope="col">Weight</th>
+                            <th scope="col">Sets</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Squats (A1)</th>
+                            <td>60% 1RM</td>
+                            <td>10x10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Lying Leg Curls (A2)</th>
+                            <td>60% 1RM</td>
+                            <td>10x8</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Low Cable Pull-ins (B1)</th>
+                            <td>60% 1RM</td>
+                            <td>3x10-12</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Seated Calf Raises (B2)</th>
+                            <td>60% 1RM</td>
+                            <td>3x10-12</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <!--Rest-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th scope="col">Rest Day</th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+                <!--Arms&Shoulders-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th class="col-6" scope="col">Movement</th>
+                            <th scope="col">Weight</th>
+                            <th scope="col">Sets</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Parallel Bar Dips (A1)</th>
+                            <td>60% 1RM</td>
+                            <td>10x10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Hammer Curls (A2)</th>
+                            <td>60% 1RM</td>
+                            <td>10x8</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Bent Over Lateral Raise (B1)</th>
+                            <td>60% 1RM</td>
+                            <td>3x8-10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Seated Dumbbell Lateral Raises (B2)</th>
+                            <td>60% 1RM</td>
+                            <td>3x10-12</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <!--Rest-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th scope="col">Rest Day</th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+                <!--Chest&Back-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th class="col-6" scope="col">Movement</th>
+                            <th scope="col">Weight</th>
+                            <th scope="col">Sets</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Decline Dumbbell Press (A1)</th>
+                            <td>60% 1RM</td>
+                            <td>10x10</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Chin Ups (A2)</th>
+                            <td>60% 1RM</td>
+                            <td>10x10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Incline Dumbbell Flyes (B1)</th>
+                            <td>60% 1RM</td>
+                            <td>3x10-12</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">One Arm Dumbbell Rows (B2)</th>
+                            <td>60% 1RM</td>
+                            <td>3x10-12</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--Legs & Abs-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th class="col-6" scope="col">Movement</th>
+                            <th scope="col">Weight</th>
+                            <th scope="col">Sets</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Squats (A1)</th>
+                            <td>60% 1RM</td>
+                            <td>10x10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Lying Leg Curls (A2)</th>
+                            <td>60% 1RM</td>
+                            <td>10x8</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Low Cable Pull-ins (B1)</th>
+                            <td>60% 1RM</td>
+                            <td>3x10-12</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Seated Calf Raises (B2)</th>
+                            <td>60% 1RM</td>
+                            <td>3x10-12</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--Week 2-->
+        <div class="tab-pane fade" id="nav-week-2" role="tabpanel" aria-labelledby="week-2-tab">
+            <div class="vstack" style="background-color: ;">
+                <!--Rest-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th scope="col">Rest Day</th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+                <!--Arms&Shoulders-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th class="col-6" scope="col">Movement</th>
+                            <th scope="col">Weight</th>
+                            <th scope="col">Sets</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Parallel Bar Dips (A1)</th>
+                            <td>60% 1RM</td>
+                            <td>10x10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Hammer Curls (A2)</th>
+                            <td>60% 1RM</td>
+                            <td>10x8</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Bent Over Lateral Raise (B1)</th>
+                            <td>60% 1RM</td>
+                            <td>3x8-10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Seated Dumbbell Lateral Raises (B2)</th>
+                            <td>60% 1RM</td>
+                            <td>3x10-12</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <!--Rest-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th scope="col">Rest Day</th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+                <!--Chest&Back-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th class="col-6" scope="col">Movement</th>
+                            <th scope="col">Weight</th>
+                            <th scope="col">Sets</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Decline Dumbbell Press (A1)</th>
+                            <td>60% 1RM</td>
+                            <td>10x10</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Chin Ups (A2)</th>
+                            <td>60% 1RM</td>
+                            <td>10x10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Incline Dumbbell Flyes (B1)</th>
+                            <td>60% 1RM</td>
+                            <td>3x10-12</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">One Arm Dumbbell Rows (B2)</th>
+                            <td>60% 1RM</td>
+                            <td>3x10-12</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--Legs & Abs-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th class="col-6" scope="col">Movement</th>
+                            <th scope="col">Weight</th>
+                            <th scope="col">Sets</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Squats (A1)</th>
+                            <td>60% 1RM</td>
+                            <td>10x10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Lying Leg Curls (A2)</th>
+                            <td>60% 1RM</td>
+                            <td>10x8</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Low Cable Pull-ins (B1)</th>
+                            <td>60% 1RM</td>
+                            <td>3x10-12</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Seated Calf Raises (B2)</th>
+                            <td>60% 1RM</td>
+                            <td>3x10-12</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <!--Rest-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th scope="col">Rest Day</th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+                <!--Arms&Shoulders-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th class="col-6" scope="col">Movement</th>
+                            <th scope="col">Weight</th>
+                            <th scope="col">Sets</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Parallel Bar Dips (A1)</th>
+                            <td>60% 1RM</td>
+                            <td>10x10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Hammer Curls (A2)</th>
+                            <td>60% 1RM</td>
+                            <td>10x8</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Bent Over Lateral Raise (B1)</th>
+                            <td>60% 1RM</td>
+                            <td>3x8-10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Seated Dumbbell Lateral Raises (B2)</th>
+                            <td>60% 1RM</td>
+                            <td>3x10-12</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--Week 3-->
+        <div class="tab-pane fade" id="nav-week-3" role="tabpanel" aria-labelledby="week-3-tab">
+            <div class="vstack" style="background-color: ;">
+                <!--Chest&Back-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th class="col-6" scope="col">Movement</th>
+                            <th scope="col">Weight</th>
+                            <th scope="col">Sets</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Decline Dumbbell Press (A1)</th>
+                            <td>60% 1RM</td>
+                            <td>10x10</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Chin Ups (A2)</th>
+                            <td>60% 1RM</td>
+                            <td>10x10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Incline Dumbbell Flyes (B1)</th>
+                            <td>60% 1RM</td>
+                            <td>3x10-12</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">One Arm Dumbbell Rows (B2)</th>
+                            <td>60% 1RM</td>
+                            <td>3x10-12</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--Legs & Abs-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th class="col-6" scope="col">Movement</th>
+                            <th scope="col">Weight</th>
+                            <th scope="col">Sets</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Squats (A1)</th>
+                            <td>60% 1RM</td>
+                            <td>10x10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Lying Leg Curls (A2)</th>
+                            <td>60% 1RM</td>
+                            <td>10x8</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Low Cable Pull-ins (B1)</th>
+                            <td>60% 1RM</td>
+                            <td>3x10-12</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Seated Calf Raises (B2)</th>
+                            <td>60% 1RM</td>
+                            <td>3x10-12</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <!--Rest-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th scope="col">Rest Day</th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+                <!--Arms&Shoulders-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th class="col-6" scope="col">Movement</th>
+                            <th scope="col">Weight</th>
+                            <th scope="col">Sets</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Parallel Bar Dips (A1)</th>
+                            <td>60% 1RM</td>
+                            <td>10x10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Hammer Curls (A2)</th>
+                            <td>60% 1RM</td>
+                            <td>10x8</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Bent Over Lateral Raise (B1)</th>
+                            <td>60% 1RM</td>
+                            <td>3x8-10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Seated Dumbbell Lateral Raises (B2)</th>
+                            <td>60% 1RM</td>
+                            <td>3x10-12</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <!--Rest-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th scope="col">Rest Day</th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+                <!--Chest&Back-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th class="col-6" scope="col">Movement</th>
+                            <th scope="col">Weight</th>
+                            <th scope="col">Sets</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Decline Dumbbell Press (A1)</th>
+                            <td>60% 1RM</td>
+                            <td>10x10</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Chin Ups (A2)</th>
+                            <td>60% 1RM</td>
+                            <td>10x10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Incline Dumbbell Flyes (B1)</th>
+                            <td>60% 1RM</td>
+                            <td>3x10-12</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">One Arm Dumbbell Rows (B2)</th>
+                            <td>60% 1RM</td>
+                            <td>3x10-12</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--Legs & Abs-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th class="col-6" scope="col">Movement</th>
+                            <th scope="col">Weight</th>
+                            <th scope="col">Sets</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Squats (A1)</th>
+                            <td>60% 1RM</td>
+                            <td>10x10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Lying Leg Curls (A2)</th>
+                            <td>60% 1RM</td>
+                            <td>10x8</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Low Cable Pull-ins (B1)</th>
+                            <td>60% 1RM</td>
+                            <td>3x10-12</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Seated Calf Raises (B2)</th>
+                            <td>60% 1RM</td>
+                            <td>3x10-12</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--Week 4-->
+        <div class="tab-pane fade" id="nav-week-4" role="tabpanel" aria-labelledby="week-2-tab">
+            <div class="vstack" style="background-color: ;">
+                <!--Rest-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th scope="col">Rest Day</th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+                <!--Arms&Shoulders-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th class="col-6" scope="col">Movement</th>
+                            <th scope="col">Weight</th>
+                            <th scope="col">Sets</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Parallel Bar Dips (A1)</th>
+                            <td>60% 1RM</td>
+                            <td>10x10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Hammer Curls (A2)</th>
+                            <td>60% 1RM</td>
+                            <td>10x8</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Bent Over Lateral Raise (B1)</th>
+                            <td>60% 1RM</td>
+                            <td>3x8-10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Seated Dumbbell Lateral Raises (B2)</th>
+                            <td>60% 1RM</td>
+                            <td>3x10-12</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <!--Chest&Back-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th class="col-6" scope="col">Movement</th>
+                            <th scope="col">Weight</th>
+                            <th scope="col">Sets</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Decline Dumbbell Press (A1)</th>
+                            <td>60% 1RM</td>
+                            <td>10x10</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Chin Ups (A2)</th>
+                            <td>60% 1RM</td>
+                            <td>10x10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Incline Dumbbell Flyes (B1)</th>
+                            <td>60% 1RM</td>
+                            <td>3x10-12</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">One Arm Dumbbell Rows (B2)</th>
+                            <td>60% 1RM</td>
+                            <td>3x10-12</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--Legs & Abs-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th class="col-6" scope="col">Movement</th>
+                            <th scope="col">Weight</th>
+                            <th scope="col">Sets</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Squats (A1)</th>
+                            <td>60% 1RM</td>
+                            <td>10x10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Lying Leg Curls (A2)</th>
+                            <td>60% 1RM</td>
+                            <td>10x8</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Low Cable Pull-ins (B1)</th>
+                            <td>60% 1RM</td>
+                            <td>3x10-12</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Seated Calf Raises (B2)</th>
+                            <td>60% 1RM</td>
+                            <td>3x10-12</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <!--Rest-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th scope="col">Rest Day</th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+                <!--Arms&Shoulders-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th class="col-6" scope="col">Movement</th>
+                            <th scope="col">Weight</th>
+                            <th scope="col">Sets</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Parallel Bar Dips (A1)</th>
+                            <td>60% 1RM</td>
+                            <td>10x10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Hammer Curls (A2)</th>
+                            <td>60% 1RM</td>
+                            <td>10x8</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Bent Over Lateral Raise (B1)</th>
+                            <td>60% 1RM</td>
+                            <td>3x8-10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Seated Dumbbell Lateral Raises (B2)</th>
+                            <td>60% 1RM</td>
+                            <td>3x10-12</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <!--Chest&Back-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th class="col-6" scope="col">Movement</th>
+                            <th scope="col">Weight</th>
+                            <th scope="col">Sets</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Decline Dumbbell Press (A1)</th>
+                            <td>60% 1RM</td>
+                            <td>10x10</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Chin Ups (A2)</th>
+                            <td>60% 1RM</td>
+                            <td>10x10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Incline Dumbbell Flyes (B1)</th>
+                            <td>60% 1RM</td>
+                            <td>3x10-12</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">One Arm Dumbbell Rows (B2)</th>
+                            <td>60% 1RM</td>
+                            <td>3x10-12</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--Week 5-->
+        <div class="tab-pane fade" id="nav-week-5" role="tabpanel" aria-labelledby="week-5-tab">
+            <div class="vstack" style="background-color: ;">
+                <!--Chest&Back-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th class="col-6" scope="col">Movement</th>
+                            <th scope="col">Weight</th>
+                            <th scope="col">Sets</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Incline DB Press (A1)</th>
+                            <td>60% 1RM</td>
+                            <td>10x6</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Wide Grip Pull Ups (A2)</th>
+                            <td>60% 1RM</td>
+                            <td>10x6</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Flat DB Flyes (B1)</th>
+                            <td>60% 1RM</td>
+                            <td>3x6</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Bent Over Rows w EZ Bar (B2)</th>
+                            <td>60% 1RM</td>
+                            <td>3x6</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--Legs & Abs-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th class="col-6" scope="col">Movement</th>
+                            <th scope="col">Weight</th>
+                            <th scope="col">Sets</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Bent Knee Deadlifts (A1)</th>
+                            <td>60% 1RM</td>
+                            <td>10x6</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Wide Grip Pull Ups (A2)</th>
+                            <td>60% 1RM</td>
+                            <td>10x6</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Twisting Crunches (B1)</th>
+                            <td>20 Rep Max</td>
+                            <td>3x12-15</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Standing Calf Raises (B2)</th>
+                            <td>20 Rep Max</td>
+                            <td>3x12-15</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <!--Rest-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th scope="col">Rest Day</th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+                <!--Arms&Shoulders-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th class="col-6" scope="col">Movement</th>
+                            <th scope="col">Weight</th>
+                            <th scope="col">Sets</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Parallel Bar Dips (A1)</th>
+                            <td>60% 1RM</td>
+                            <td>10x10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Hammer Curls (A2)</th>
+                            <td>60% 1RM</td>
+                            <td>10x8</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Bent Over Lateral Raise (B1)</th>
+                            <td>60% 1RM</td>
+                            <td>3x8-10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Seated Dumbbell Lateral Raises (B2)</th>
+                            <td>60% 1RM</td>
+                            <td>3x10-12</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <!--Rest-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th scope="col">Rest Day</th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+                <!--Chest&Back-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th class="col-6" scope="col">Movement</th>
+                            <th scope="col">Weight</th>
+                            <th scope="col">Sets</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Decline Dumbbell Press (A1)</th>
+                            <td>60% 1RM</td>
+                            <td>10x10</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Chin Ups (A2)</th>
+                            <td>60% 1RM</td>
+                            <td>10x10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Incline Dumbbell Flyes (B1)</th>
+                            <td>60% 1RM</td>
+                            <td>3x10-12</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">One Arm Dumbbell Rows (B2)</th>
+                            <td>60% 1RM</td>
+                            <td>3x10-12</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--Legs & Abs-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th class="col-6" scope="col">Movement</th>
+                            <th scope="col">Weight</th>
+                            <th scope="col">Sets</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Squats (A1)</th>
+                            <td>60% 1RM</td>
+                            <td>10x10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Lying Leg Curls (A2)</th>
+                            <td>60% 1RM</td>
+                            <td>10x8</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Low Cable Pull-ins (B1)</th>
+                            <td>60% 1RM</td>
+                            <td>3x10-12</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Seated Calf Raises (B2)</th>
+                            <td>60% 1RM</td>
+                            <td>3x10-12</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--Week 6-->
+        <div class="tab-pane fade" id="nav-week-6" role="tabpanel" aria-labelledby="week-6-tab">
+            <div class="vstack" style="background-color: ;">
+                <!--Rest-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th scope="col">Rest Day</th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+                <!--Arms&Shoulders-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th class="col-6" scope="col">Movement</th>
+                            <th scope="col">Weight</th>
+                            <th scope="col">Sets</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Parallel Bar Dips (A1)</th>
+                            <td>60% 1RM</td>
+                            <td>10x10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Hammer Curls (A2)</th>
+                            <td>60% 1RM</td>
+                            <td>10x8</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Bent Over Lateral Raise (B1)</th>
+                            <td>60% 1RM</td>
+                            <td>3x8-10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Seated Dumbbell Lateral Raises (B2)</th>
+                            <td>60% 1RM</td>
+                            <td>3x10-12</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <!--Rest-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th scope="col">Rest Day</th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+                <!--Chest&Back-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th class="col-6" scope="col">Movement</th>
+                            <th scope="col">Weight</th>
+                            <th scope="col">Sets</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Incline DB Press (A1)</th>
+                            <td>60% 1RM</td>
+                            <td>10x6</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Wide Grip Pull Ups (A2)</th>
+                            <td>60% 1RM</td>
+                            <td>10x6</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Flat DB Flyes (B1)</th>
+                            <td>60% 1RM</td>
+                            <td>3x6</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Bent Over Rows w EZ Bar (B2)</th>
+                            <td>60% 1RM</td>
+                            <td>3x6</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--Legs & Abs-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th class="col-6" scope="col">Movement</th>
+                            <th scope="col">Weight</th>
+                            <th scope="col">Sets</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Bent Knee Deadlifts (A1)</th>
+                            <td>60% 1RM</td>
+                            <td>10x6</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Wide Grip Pull Ups (A2)</th>
+                            <td>60% 1RM</td>
+                            <td>10x6</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Twisting Crunches (B1)</th>
+                            <td>20 Rep Max</td>
+                            <td>3x12-15</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Standing Calf Raises (B2)</th>
+                            <td>20 Rep Max</td>
+                            <td>3x12-15</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <!--Rest-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th scope="col">Rest Day</th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+                <!--Arms&Shoulders-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th class="col-6" scope="col">Movement</th>
+                            <th scope="col">Weight</th>
+                            <th scope="col">Sets</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Parallel Bar Dips (A1)</th>
+                            <td>60% 1RM</td>
+                            <td>10x10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Hammer Curls (A2)</th>
+                            <td>60% 1RM</td>
+                            <td>10x8</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Bent Over Lateral Raise (B1)</th>
+                            <td>60% 1RM</td>
+                            <td>3x8-10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Seated Dumbbell Lateral Raises (B2)</th>
+                            <td>60% 1RM</td>
+                            <td>3x10-12</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+
+            </div>
+        </div>
+        <!--Week 7-->
+        <div class="tab-pane fade" id="nav-week-7" role="tabpanel" aria-labelledby="week-7-tab">
+            <div class="vstack" style="background-color: ;">
+                <!--Chest&Back-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th class="col-6" scope="col">Movement</th>
+                            <th scope="col">Weight</th>
+                            <th scope="col">Sets</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Incline DB Press (A1)</th>
+                            <td>60% 1RM</td>
+                            <td>10x6</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Wide Grip Pull Ups (A2)</th>
+                            <td>60% 1RM</td>
+                            <td>10x6</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Flat DB Flyes (B1)</th>
+                            <td>60% 1RM</td>
+                            <td>3x6</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Bent Over Rows w EZ Bar (B2)</th>
+                            <td>60% 1RM</td>
+                            <td>3x6</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--Legs & Abs-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th class="col-6" scope="col">Movement</th>
+                            <th scope="col">Weight</th>
+                            <th scope="col">Sets</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Bent Knee Deadlifts (A1)</th>
+                            <td>60% 1RM</td>
+                            <td>10x6</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Wide Grip Pull Ups (A2)</th>
+                            <td>60% 1RM</td>
+                            <td>10x6</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Twisting Crunches (B1)</th>
+                            <td>20 Rep Max</td>
+                            <td>3x12-15</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Standing Calf Raises (B2)</th>
+                            <td>20 Rep Max</td>
+                            <td>3x12-15</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <!--Rest-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th scope="col">Rest Day</th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+                <!--Arms&Shoulders-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th class="col-6" scope="col">Movement</th>
+                            <th scope="col">Weight</th>
+                            <th scope="col">Sets</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Parallel Bar Dips (A1)</th>
+                            <td>60% 1RM</td>
+                            <td>10x10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Hammer Curls (A2)</th>
+                            <td>60% 1RM</td>
+                            <td>10x8</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Bent Over Lateral Raise (B1)</th>
+                            <td>60% 1RM</td>
+                            <td>3x8-10</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Seated Dumbbell Lateral Raises (B2)</th>
+                            <td>60% 1RM</td>
+                            <td>3x10-12</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <!--Rest-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th scope="col">Rest Day</th>
+                        </tr>
+                        </thead>
+                    </table>
+                </div>
+                <!--Chest&Back-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th class="col-6" scope="col">Movement</th>
+                            <th scope="col">Weight</th>
+                            <th scope="col">Sets</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Incline DB Press (A1)</th>
+                            <td>60% 1RM</td>
+                            <td>10x6</td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">Wide Grip Pull Ups (A2)</th>
+                            <td>60% 1RM</td>
+                            <td>10x6</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Flat DB Flyes (B1)</th>
+                            <td>60% 1RM</td>
+                            <td>3x6</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Bent Over Rows w EZ Bar (B2)</th>
+                            <td>60% 1RM</td>
+                            <td>3x6</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--Legs & Abs-->
+                <div class="" style="background-color:;">
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                            <th class="col-6" scope="col">Movement</th>
+                            <th scope="col">Weight</th>
+                            <th scope="col">Sets</th>
+
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Bent Knee Deadlifts (A1)</th>
+                            <td>60% 1RM</td>
+                            <td>10x6</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Wide Grip Pull Ups (A2)</th>
+                            <td>60% 1RM</td>
+                            <td>10x6</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Twisting Crunches (B1)</th>
+                            <td>20 Rep Max</td>
+                            <td>3x12-15</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Standing Calf Raises (B2)</th>
+                            <td>20 Rep Max</td>
+                            <td>3x12-15</td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="container text-start text-black" style="background-color: ;">
+    <h5 class="mb-3">{{ tl[0]["notes 1"] }}</h5>
+    <h5 class="mb-3">{{ tl[0]["notes 2"] }}</h5>
+    <h5 class="mb-3">{{ tl[0]["notes 3"] }}</h5>
+    <h5 class="mb-3">{{ bb[0]["experience"] }}</h5>
+    <h5 class="mb-4">{{ bb[0]["secondary"] }} </h5>
+    <h5 class="mb-4"> Source + Further Reading: <a
+            href="https://liftvault.com/programs/bodybuilding/german-volume-training-routine-spreadsheet-gvt/">liftvault.com</a>
+    </h5>
+</div>
+
+
+</div>
+</div>
+{% endblock%}
